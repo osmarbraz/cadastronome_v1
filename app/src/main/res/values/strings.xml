@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">cadastronome_v1</string>
+    <string name="botao_incluir" translatable="false">Incluir</string>
+    <string name="botao_excluir" translatable="false">Excluir</string>
+    <string name="botao_consulta">Consultar</string>
+    <string name="botao_listar">Listar</string>
+    <string name="botao_esvaziar_bd">Esvaziar BD</string>
+    <string name="botao_limpar">Limpar</string>
+    <string name="botao_fechar">Fechar</string>
+</resources>
