@@ -14,9 +14,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
-    //Dados do banco de dados
-    final static String APP_PREFS = " cadastronome_v1 ";
-    final static String USERNAME_KEY = " nome";
+    //Nome do mapa
+    final static String NOME_SHAREDPREFERENCES = " cadastronome_v1 ";
 
     //Componentes a serem manipulados
     private EditText EditTextNome;
@@ -37,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         EditTextListaDados = findViewById(R.id.EditTextListaDados);
 
         //Associa o banco a classe
-        bdPrefs = getSharedPreferences(MainActivity.APP_PREFS, MODE_PRIVATE);
+        bdPrefs = getSharedPreferences(MainActivity.NOME_SHAREDPREFERENCES, MODE_PRIVATE);
 
         //Atualiza a quantidade de registros
         atualizaRegistros();
@@ -119,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
                 editor.clear();
                 editor.commit();
 
-                Toast.makeText(MainActivity.this, "Dados Apagados!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Nomes Apagados!", Toast.LENGTH_SHORT).show();
                 atualizaRegistros();
             }
         });
